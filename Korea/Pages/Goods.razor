@@ -1,0 +1,57 @@
+
+@page "/category/{Id:int}" 
+@inject HttpClient Http
+@using Korea.Shared.Models;
+@using System.Linq;
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>    
+    <li class="breadcrumb-item active" aria-current="page">@Crumb()</li>
+  </ol>
+</nav>
+
+<div class="row">
+	@foreach (var good in goods)
+	{
+		<div class="col-sm-12 col-md-6 col-lg-3 p-1">
+			<div class="card shadow-sm">
+				<img src="@good.Image" class="card-img-top" alt="@good.Title">
+				<div class="card-body">
+					<h5 class="card-title">@good.Title</h5>
+					<p class="card-text">@good.Description</p>
+					<h2><span class="badge badge-secondary">@good.Price</span></h2>
+					<a href="/" class="btn btn-outline-info">Go to</a>
+				</div>
+			</div>
+		</div>
+	}
+</div>
+
+@code 
+{
+	[Parameter]
+    public int Id { get; set; }
+
+	protected List<Good> goods = new List<Good>();
+	protected override async Task OnInitializedAsync()
+	{
+		var res = await Http.GetJsonAsync<List<Good>>("sample-data/goods.json");
+		goods = res.Where(i => i.CategoryId == Id).ToList();
+	}
+
+	protected string Crumb() 
+	{
+		switch(Id) 
+		{
+			case 1: return "Shampoon";
+			case 2: return "Masks";
+			case 3: return "Test";
+			case 4: return "Test2";
+			case 5: return "Test3";			
+		}
+
+		return null;
+	}
+
+}

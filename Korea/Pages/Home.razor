@@ -1,0 +1,44 @@
+
+@page "/" 
+@inject HttpClient Http
+@using Korea.Shared.Models;
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active">Home</li>    
+  </ol>
+</nav>
+
+<div class="row">
+	@foreach (var category in categories)
+	{
+		<div class="col-sm-12 col-md-6 col-lg-3 p-1">
+			<div class="card">
+				<img src="@category.Image" class="card-img-top" alt="@category.Name">
+				<div class="card-body">
+					<h5 class="card-title">@category.Name</h5>
+					<p class="card-text">@category.Description</p>					
+					<NavLink class="btn btn-outline-info" href="@GetUrl(category.Id)" Match="NavLinkMatch.All">
+                		Go to
+            		</NavLink>
+					<!-- <a href="#" class="btn btn-outline-info">Go to</a> -->
+				</div>
+			</div>
+		</div>
+	}
+</div>
+
+@code 
+{
+	protected List<Category> categories = new List<Category>();
+	protected override async Task OnInitializedAsync()
+	{
+		categories = await Http.GetJsonAsync<List<Category>>("sample-data/categories.json");			
+	}
+
+	protected string GetUrl(int id) 
+	{
+		return "category/" + id;
+	}
+
+}
