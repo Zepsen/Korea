@@ -24,7 +24,7 @@
 		BasePage.AddBreadcrump(new List<Breadcrumb> 
 		{ 
 			new Breadcrumb { Name = "Categories", Route = "/" },
-			new Breadcrumb { Name = Crumb(), Route = "/category/" + this.CategoryId },
+			new Breadcrumb { Name = Category.Crumb(CategoryId), Route = $"/category/{this.CategoryId}" },
 			new Breadcrumb { Name = Id.ToString(), Active = true }
 		});
 	}
@@ -35,19 +35,4 @@
 		var res = await Http.GetJsonAsync<List<Good>>("sample-data/goods.json");
 		good = res.FirstOrDefault(i => i.Id == Id);
 	}
-
-	protected string Crumb() 
-	{
-		switch(CategoryId) 
-		{
-			case 1: return "Shampoon";
-			case 2: return "Masks";
-			case 3: return "Test";
-			case 4: return "Test2";
-			case 5: return "Test3";			
-		}
-
-		return null;
-	}
-
 }
