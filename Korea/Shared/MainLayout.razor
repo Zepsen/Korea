@@ -9,12 +9,16 @@
 
 <CascadingValue Value="this">
 	<div class="main" style="margin-top: 50px">
-		<nav class="navbar fixed-top navbar-dark bg-info">
-			<a class="navbar-brand" href="/">
-				<!-- <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
-				Korea
-			</a>
-		</nav>
+
+		@if(HasHeader)
+		{
+			<nav class="navbar fixed-top navbar-dark bg-info">
+				<a class="navbar-brand" href="/">
+					<!-- <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+					Korea
+				</a>
+			</nav>
+		}
 
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb">
@@ -47,4 +51,7 @@
 		breads = breadcrumbs;
 		StateHasChanged();
 	}
+
+	public bool HasHeader { get; set;} = true;
+	
 }

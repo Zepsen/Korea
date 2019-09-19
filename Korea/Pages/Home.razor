@@ -26,9 +26,6 @@
 
 @code 
 {
-	[CascadingParameter]
-	public IBasePage basePage { get; set; }
-
 	protected override void Breadcrumbs()
 	{
 		basePage.AddBreadcrump(new List<Breadcrumb> 
