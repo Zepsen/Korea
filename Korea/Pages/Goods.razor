@@ -1,18 +1,14 @@
-
 @page "/category/{Id:int}" 
-@inject HttpClient Http
 @using Korea.Shared.Models;
+@using Korea.Core;
+@using Korea.Shared.Components;
 @using System.Linq;
 
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="/">Home</a></li>    
-    <li class="breadcrumb-item active" aria-current="page">@Crumb()</li>
-  </ol>
-</nav>
+@inherits Page
+@inject HttpClient Http
 
 <div class="row">
-	@foreach (var good in goods)
+	@foreach (var good in goods.Data)
 	{
 		<div class="col-sm-12 col-md-6 col-lg-3 p-1">
 			<div class="card shadow-sm">
@@ -21,37 +17,64 @@
 					<h5 class="card-title">@good.Title</h5>
 					<p class="card-text">@good.Description</p>
 					<h2><span class="badge badge-secondary">@good.Price</span></h2>
-					<a href="/" class="btn btn-outline-info">Go to</a>
+					<a href="@GetUrl(good.Id)" class="btn btn-outline-info">Go to @good.Id</a>
 				</div>
 			</div>
 		</div>
 	}
+
+	
 </div>
 
+<div class="row">
+	<Pagination Model="pagination" OnChange="OnChangePage"/>
+</div>
+
+
 @code 
-{
+{	
 	[Parameter]
     public int Id { get; set; }
 
-	protected List<Good> goods = new List<Good>();
+	private PaginationModel pagination = new PaginationModel();
+	private Result<Good> goods = new Result<Good>();
+	private FilterModel filter = new FilterModel();
+    		
+
+	protected override void Breadcrumbs()
+	{
+		BasePage.AddBreadcrump(new List<Breadcrumb> 
+		{ 
+			new Breadcrumb { Name = "Categories", Route = "/" },
+			new Breadcrumb { Name = Category.Crumb(Id), Active = true }
+		});
+	}
+
 	protected override async Task OnInitializedAsync()
 	{
-		var res = await Http.GetJsonAsync<List<Good>>("sample-data/goods.json");
-		goods = res.Where(i => i.CategoryId == Id).ToList();
+		goods = await GetGoods(filter);
 	}
 
-	protected string Crumb() 
+	private async Task<Result<Good>> GetGoods(FilterModel filter)
 	{
-		switch(Id) 
-		{
-			case 1: return "Shampoon";
-			case 2: return "Masks";
-			case 3: return "Test";
-			case 4: return "Test2";
-			case 5: return "Test3";			
-		}
+		var res = await Http.GetJsonAsync<List<Good>>("sample-data/goods.json");
+			res = res.Where(i => i.CategoryId == Id).ToList();
+				
+		pagination.LastPage = res.Count / filter.Take + 1;
 
-		return null;
+		return new Result<Good> 
+		{
+			Data = res.Skip((filter.Page - 1) * filter.Take).Take(filter.Take).ToList(),
+			Total = res.Count
+		};		
 	}
 
+	private string GetUrl(int id) => $"good/{Id}/{id}";
+
+	private async Task OnChangePage(int page)
+	{
+		filter.Page = page;
+		pagination.Page = page;
+		goods = await GetGoods(filter);
+	}
 }

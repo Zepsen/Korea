@@ -1441,11 +1441,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\Korea\\Korea\\Korea.csproj",
+      "projectUniqueName": "C:\\Projects\\Korea\\korea\\Korea.csproj",
       "projectName": "Korea",
-      "projectPath": "C:\\Projects\\Korea\\Korea\\Korea.csproj",
+      "projectPath": "C:\\Projects\\Korea\\korea\\Korea.csproj",
       "packagesPath": "C:\\Users\\ZEPSENHOME\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\Korea\\Korea\\obj\\",
+      "outputPath": "C:\\Projects\\Korea\\korea\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
