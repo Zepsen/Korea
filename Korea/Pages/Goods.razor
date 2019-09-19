@@ -16,7 +16,7 @@
 					<h5 class="card-title">@good.Title</h5>
 					<p class="card-text">@good.Description</p>
 					<h2><span class="badge badge-secondary">@good.Price</span></h2>
-					<a href="/" class="btn btn-outline-info">Go to</a>
+					<a href="@GetUrl(good.Id)" class="btn btn-outline-info">Go to @good.Id</a>
 				</div>
 			</div>
 		</div>
@@ -41,7 +41,7 @@
 	protected override async Task OnInitializedAsync()
 	{
 		var res = await Http.GetJsonAsync<List<Good>>("sample-data/goods.json");
-		goods = res.Where(i => i.CategoryId == Id).ToList();
+		goods = res.Where(i => i.CategoryId == Id).ToList();		
 	}
 
 	protected string Crumb() 
@@ -56,6 +56,11 @@
 		}
 
 		return null;
+	}
+
+	protected string GetUrl(int id) 
+	{
+		return $"good/{Id}/{id}";
 	}
 
 }

@@ -252,3 +252,5 @@ C:\Projects\Korea\korea\korea\bin\Debug\netstandard2.0\dist\_framework\blazor.we
 C:\Projects\Korea\korea\korea\bin\Debug\netstandard2.0\dist\_framework\_bin\Korea.pdb
 C:\Projects\Korea\korea\korea\bin\Debug\netstandard2.0\dist\_framework\blazor.boot.json
 C:\Projects\Korea\korea\korea\obj\Debug\netstandard2.0\blazor\blazor.boot.json
+C:\Projects\Korea\korea\korea\obj\Debug\netstandard2.0\RazorDeclaration\Pages\ActiveGood.razor.g.cs
+C:\Projects\Korea\korea\korea\obj\Debug\netstandard2.0\Razor\Pages\ActiveGood.razor.g.cs

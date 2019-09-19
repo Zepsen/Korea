@@ -1,0 +1,53 @@
+@page "/good/{CategoryId:int}/{Id:int}" 
+@using Korea.Shared.Models;
+@using Korea.Shared.Pages;
+@using System.Linq;
+
+@inherits Page
+@inject HttpClient Http
+
+<div class="row">
+	asdf @CategoryId 
+	asdfad @Id
+</div>
+
+@code 
+{	
+	[Parameter]
+    public int Id { get; set; }
+
+	[Parameter]
+    public int CategoryId { get; set; }
+	
+	protected override void Breadcrumbs()
+	{
+		BasePage.AddBreadcrump(new List<Breadcrumb> 
+		{ 
+			new Breadcrumb { Name = "Categories", Route = "/" },
+			new Breadcrumb { Name = Crumb(), Route = "/category/" + this.CategoryId },
+			new Breadcrumb { Name = Id.ToString(), Active = true }
+		});
+	}
+	
+	protected Good good = new Good();
+	protected override async Task OnInitializedAsync()
+	{
+		var res = await Http.GetJsonAsync<List<Good>>("sample-data/goods.json");
+		good = res.FirstOrDefault(i => i.Id == Id);
+	}
+
+	protected string Crumb() 
+	{
+		switch(CategoryId) 
+		{
+			case 1: return "Shampoon";
+			case 2: return "Masks";
+			case 3: return "Test";
+			case 4: return "Test2";
+			case 5: return "Test3";			
+		}
+
+		return null;
+	}
+
+}
