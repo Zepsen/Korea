@@ -981,7 +981,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "+nlUaWVBXibHgpdS7sa5gW2mQ+xG6g9J/pyv++2K8kfVJfD/mVb0LOTqzSp+vXH0cy64vKfr4f8DUd5T4wZzqg==",
+      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -1435,23 +1435,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ZEPSENHOME\\.nuget\\packages\\": {},
+    "C:\\Users\\Dmytro_Zepsen\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\Korea\\Korea\\Korea.csproj",
+      "projectUniqueName": "C:\\Projects\\Korea\\korea\\korea\\Korea.csproj",
       "projectName": "Korea",
-      "projectPath": "C:\\Projects\\Korea\\Korea\\Korea.csproj",
-      "packagesPath": "C:\\Users\\ZEPSENHOME\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\Korea\\Korea\\obj\\",
+      "projectPath": "C:\\Projects\\Korea\\korea\\korea\\Korea.csproj",
+      "packagesPath": "C:\\Users\\Dmytro_Zepsen\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\Korea\\korea\\korea\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\ZEPSENHOME\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dmytro_Zepsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1510,7 +1510,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100-rc1-014190\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100-preview9-014004\\RuntimeIdentifierGraph.json"
       }
     }
   }
