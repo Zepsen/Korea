@@ -1,13 +1,9 @@
+@using Korea.Shared.Models;
+@using Korea.Shared.Pages;
 
 @page "/" 
+@inherits Page
 @inject HttpClient Http
-@using Korea.Shared.Models;
-
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item active">Home</li>    
-  </ol>
-</nav>
 
 <div class="row">
 	@foreach (var category in categories)
@@ -30,6 +26,17 @@
 
 @code 
 {
+	[CascadingParameter]
+	public IBasePage basePage { get; set; }
+
+	protected override void Breadcrumbs()
+	{
+		basePage.AddBreadcrump(new List<Breadcrumb> 
+		{ 
+			new Breadcrumb { Name = "Categories" } , 			
+		});
+	}
+
 	protected List<Category> categories = new List<Category>();
 	protected override async Task OnInitializedAsync()
 	{

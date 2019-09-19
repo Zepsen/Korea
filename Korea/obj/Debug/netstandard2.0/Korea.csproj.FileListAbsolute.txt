@@ -245,3 +245,10 @@ C:\Projects\Korea\korea\korea\obj\Debug\netstandard2.0\blazor\linker\System.Text
 C:\Projects\Korea\korea\korea\obj\Debug\netstandard2.0\blazor\linker\System.Threading.Tasks.Extensions.dll
 C:\Projects\Korea\korea\korea\obj\Debug\netstandard2.0\blazor\linker\Korea.pdb
 C:\Projects\Korea\korea\korea\obj\Debug\netstandard2.0\blazor\inputs.bootjson.cache
+C:\Projects\Korea\korea\korea\bin\Debug\netstandard2.0\dist\_framework\wasm\mono.js
+C:\Projects\Korea\korea\korea\bin\Debug\netstandard2.0\dist\_framework\wasm\mono.wasm
+C:\Projects\Korea\korea\korea\bin\Debug\netstandard2.0\dist\_framework\blazor.server.js
+C:\Projects\Korea\korea\korea\bin\Debug\netstandard2.0\dist\_framework\blazor.webassembly.js
+C:\Projects\Korea\korea\korea\bin\Debug\netstandard2.0\dist\_framework\_bin\Korea.pdb
+C:\Projects\Korea\korea\korea\bin\Debug\netstandard2.0\dist\_framework\blazor.boot.json
+C:\Projects\Korea\korea\korea\obj\Debug\netstandard2.0\blazor\blazor.boot.json

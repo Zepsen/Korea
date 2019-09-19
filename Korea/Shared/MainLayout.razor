@@ -1,18 +1,50 @@
-﻿@inherits LayoutComponentBase
+﻿@using Korea.Shared.Models;
+
+@inherits LayoutComponentBase
+@implements IBasePage
 <!-- 
 <div class="sidebar">
     <NavMenu />
 </div> -->
 
-<div class="main" style="margin-top: 50px">
-	<nav class="navbar fixed-top navbar-dark bg-info">
-		<a class="navbar-brand" href="/">
-			<!-- <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
-			Korea
-		</a>
-	</nav>
-	    
-    <div class="content px-4">
-        @Body
-    </div>
-</div>
+<CascadingValue Value="this">
+	<div class="main" style="margin-top: 50px">
+		<nav class="navbar fixed-top navbar-dark bg-info">
+			<a class="navbar-brand" href="/">
+				<!-- <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+				Korea
+			</a>
+		</nav>
+
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				@foreach (var bread in breads)
+				{
+					<li class="breadcrumb-item @(bread.Active ? "active" : null)">
+						@if(!bread.Active)
+						{
+							<a href="@bread.Route">@bread.Name</a>
+						}
+						else 
+							@bread.Name
+					</li>
+				}				 
+			</ol>
+		</nav>
+			
+		<div class="content px-4">
+			@Body
+		</div>
+	</div>
+</CascadingValue>
+
+@code 
+{
+	private List<Breadcrumb> breads = new List<Breadcrumb> { new Breadcrumb { Name = "Home"} };
+	
+	public void AddBreadcrump(List<Breadcrumb> breadcrumbs)
+	{
+		breads = breadcrumbs;
+		StateHasChanged();
+	}
+}

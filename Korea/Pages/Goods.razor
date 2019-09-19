@@ -1,15 +1,10 @@
-
 @page "/category/{Id:int}" 
-@inject HttpClient Http
 @using Korea.Shared.Models;
+@using Korea.Shared.Pages;
 @using System.Linq;
 
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="/">Home</a></li>    
-    <li class="breadcrumb-item active" aria-current="page">@Crumb()</li>
-  </ol>
-</nav>
+@inherits Page
+@inject HttpClient Http
 
 <div class="row">
 	@foreach (var good in goods)
@@ -30,8 +25,20 @@
 
 @code 
 {
+	[CascadingParameter]
+	public IBasePage basePage { get; set; }
+
 	[Parameter]
     public int Id { get; set; }
+
+	protected override void Breadcrumbs()
+	{
+		basePage.AddBreadcrump(new List<Breadcrumb> 
+		{ 
+			new Breadcrumb { Name = "Categories", Route = "/" },
+			new Breadcrumb { Name = Crumb(), Active = true }
+		});
+	}
 
 	protected List<Good> goods = new List<Good>();
 	protected override async Task OnInitializedAsync()
