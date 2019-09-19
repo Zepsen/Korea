@@ -8,7 +8,7 @@ namespace Korea.Shared.Pages
 	public abstract class Page : ComponentBase
 	{
 		[CascadingParameter]
-		protected IBasePage basePage { get; set; }
+		protected IBasePage BasePage { get; set; }
 
 		protected override void OnInitialized()
 		{			
