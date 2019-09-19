@@ -1,8 +1,6 @@
-
-using Korea.Shared.Models;
 using Microsoft.AspNetCore.Components;
 
-namespace Korea.Shared.Pages
+namespace Korea.Core
 {
 	
 	public abstract class Page : ComponentBase

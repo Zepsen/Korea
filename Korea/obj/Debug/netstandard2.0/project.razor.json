@@ -553,14 +553,14 @@
       },
       {
         "Kind": "Components.Component",
-        "Name": "Korea.Pages.__generated__ActiveGood",
+        "Name": "Korea.Pages.__generated__Goods",
         "AssemblyName": "Korea",
         "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "__generated__ActiveGood",
+            "TagName": "__generated__Goods",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -581,39 +581,25 @@
               "Common.PropertyName": "Id"
             },
             "BoundAttributeParameters": []
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "CategoryId",
-            "TypeName": "System.Int32",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": null,
-            "Diagnostics": [],
-            "Metadata": {
-              "Common.PropertyName": "CategoryId"
-            },
-            "BoundAttributeParameters": []
           }
         ],
         "AllowedChildTags": [],
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Korea.Pages.__generated__ActiveGood"
+          "Common.TypeName": "Korea.Pages.__generated__Goods"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "Korea.Pages.__generated__ActiveGood",
+        "Name": "Korea.Pages.__generated__Goods",
         "AssemblyName": "Korea",
         "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Korea.Pages.__generated__ActiveGood",
+            "TagName": "Korea.Pages.__generated__Goods",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -634,76 +620,13 @@
               "Common.PropertyName": "Id"
             },
             "BoundAttributeParameters": []
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "CategoryId",
-            "TypeName": "System.Int32",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": null,
-            "Diagnostics": [],
-            "Metadata": {
-              "Common.PropertyName": "CategoryId"
-            },
-            "BoundAttributeParameters": []
           }
         ],
         "AllowedChildTags": [],
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Korea.Pages.__generated__ActiveGood",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "Kind": "Components.Component",
-        "Name": "Korea.Pages.__generated__Home",
-        "AssemblyName": "Korea",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "__generated__Home",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Korea.Pages.__generated__Home"
-        }
-      },
-      {
-        "Kind": "Components.Component",
-        "Name": "Korea.Pages.__generated__Home",
-        "AssemblyName": "Korea",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Korea.Pages.__generated__Home",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Korea.Pages.__generated__Home",
+          "Common.TypeName": "Korea.Pages.__generated__Goods",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
