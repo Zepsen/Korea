@@ -6,7 +6,10 @@ namespace Korea.Shared.Models
 	public class Pagination
 	{
 		public int Page { get; set; } = 1;
-		public int Take { get; set; } = 1;
+		public int Take { get; set; } = 2;
+
+		public bool EnabledNext { get; set; } = true;
+		public bool EnabledPrev => Page > 1;
 	}	
 
 	public class Result<T>
