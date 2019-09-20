@@ -1,6 +1,7 @@
 
 .darktheme {
 	background: var(--dark);
+	color: var(--light);
 }
 
 	.darktheme.main .breadcrumb-item  a {
