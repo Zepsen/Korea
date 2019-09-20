@@ -3,7 +3,7 @@
 	background: var(--dark);
 }
 
-	.darktheme.main a {
+	.darktheme.main .breadcrumb-item  a {
 		color: lightskyblue;
 	}
 
@@ -20,7 +20,6 @@
 	/*#region  Bootstrap */
 	.darktheme.main .breadcrumb {
 		background-color: black;
-		
 	}
 
 		.darktheme.main .breadcrumb .active {
@@ -36,10 +35,19 @@
 		color: var(--light);
 	}
 
+	.darktheme.main .pagination {
+		color: var(--light);
+	}
+
 	.darktheme.main .page-item .page-link {
 		background-color: transparent;
 		border-color: darkgrey;
 	}
+
+		.darktheme.main .page-item .page-link:hover {
+			background-color: var(--info);
+		}
+
 	.darktheme.main .page-item.active .page-link {
 		background-color: var(--info);
 	}
