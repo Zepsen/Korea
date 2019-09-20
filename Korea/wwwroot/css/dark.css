@@ -17,4 +17,8 @@
 	color: var(--light);
 }
 
+.darktheme.main .breadcrumb-item+.breadcrumb-item::before {
+	color: var(--light);
+}
+
 /*#endregion Bootstrap  */
