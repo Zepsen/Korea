@@ -3,37 +3,37 @@
 	background: var(--dark);
 }
 
-.darktheme.main a {
-	color: lightskyblue;
-}
+	.darktheme.main a {
+		color: lightskyblue;
+	}
 
-.darktheme.main .btn-default {
-	color: #fff;
-    background-color: transparent;
-    border-color: var(--info);
-}
-.darktheme.main .btn-default:hover {
-	background-color: var(--info);
-}
+	.darktheme.main .btn-default {
+		color: #fff;
+		background-color: transparent;
+		border-color: var(--info);
+	}
+		.darktheme.main .btn-default:hover {
+			background-color: var(--info);
+		}
 
 
-/*#region  Bootstrap */
-.darktheme.main .breadcrumb {
-	background-color: black;
-	
-}
+	/*#region  Bootstrap */
+	.darktheme.main .breadcrumb {
+		background-color: black;
+		
+	}
 
-.darktheme.main .breadcrumb .active {
-	color: var(--light);
-}
+		.darktheme.main .breadcrumb .active {
+			color: var(--light);
+		}
 
-.darktheme.main .breadcrumb-item+.breadcrumb-item::before {
-	color: var(--light);
-}
+		.darktheme.main .breadcrumb-item+.breadcrumb-item::before {
+			color: var(--light);
+		}
 
-.darktheme.main .card {
-	background-color: var(--secondary);
-	color: var(--light);
-}
+	.darktheme.main .card {
+		background-color: var(--secondary);
+		color: var(--light);
+	}
 
-/*#endregion Bootstrap  */
+	/*#endregion Bootstrap  */

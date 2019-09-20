@@ -58,6 +58,11 @@ app {
     border-color: var(--info);
 }
 
+	.btn-default:hover {
+		color: var(--info);	
+		background-color: transparent;    
+	}
+
 .nav-item {
     font-size: 0.9rem;
     padding-bottom: 0.5rem;
