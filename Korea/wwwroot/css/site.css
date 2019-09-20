@@ -52,6 +52,12 @@ app {
         top: -2px;
     }
 
+.btn-default {
+	color: #fff;
+    background-color: var(--info);
+    border-color: var(--info);
+}
+
 .nav-item {
     font-size: 0.9rem;
     padding-bottom: 0.5rem;
