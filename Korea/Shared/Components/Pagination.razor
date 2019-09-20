@@ -49,7 +49,10 @@
 	}	
 
 	private async Task GoTo(int page)
-	{					
-		await OnChange.InvokeAsync(page);
+	{			
+		if(Model.Page != page) 
+		{
+			await OnChange.InvokeAsync(page);
+		}
 	}	
 }
