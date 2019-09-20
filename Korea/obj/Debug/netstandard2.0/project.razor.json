@@ -9,6 +9,224 @@
     "TagHelpers": [
       {
         "Kind": "Components.Component",
+        "Name": "Korea.Shared.Components.Pagination",
+        "AssemblyName": "Korea",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Pagination",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Model",
+            "TypeName": "Korea.Shared.Models.PaginationModel",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Model"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnChange",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.Int32>",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "OnChange",
+              "Components.EventCallback": "True"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Korea.Shared.Components.Pagination"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "Korea.Shared.Components.Pagination",
+        "AssemblyName": "Korea",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Korea.Shared.Components.Pagination",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Model",
+            "TypeName": "Korea.Shared.Models.PaginationModel",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Model"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnChange",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.Int32>",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "OnChange",
+              "Components.EventCallback": "True"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Korea.Shared.Components.Pagination",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "Korea.Shared.Components.__generated__Pagination",
+        "AssemblyName": "Korea",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "__generated__Pagination",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Model",
+            "TypeName": "Korea.Shared.Models.PaginationModel",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Model"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnChange",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.Int32>",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "OnChange",
+              "Components.EventCallback": "True"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Korea.Shared.Components.__generated__Pagination"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "Korea.Shared.Components.__generated__Pagination",
+        "AssemblyName": "Korea",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Korea.Shared.Components.__generated__Pagination",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Model",
+            "TypeName": "Korea.Shared.Models.PaginationModel",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Model"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnChange",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.Int32>",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "OnChange",
+              "Components.EventCallback": "True"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Korea.Shared.Components.__generated__Pagination",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
         "Name": "Korea.Shared.MainLayout",
         "AssemblyName": "Korea",
         "Documentation": null,
@@ -264,224 +482,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Korea.Shared.SurveyPrompt",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "Kind": "Components.Component",
-        "Name": "Korea.Shared.Components.Pagination",
-        "AssemblyName": "Korea",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Pagination",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Model",
-            "TypeName": "Korea.Shared.Models.PaginationModel",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": null,
-            "Diagnostics": [],
-            "Metadata": {
-              "Common.PropertyName": "Model"
-            },
-            "BoundAttributeParameters": []
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "OnChange",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.Int32>",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": null,
-            "Diagnostics": [],
-            "Metadata": {
-              "Common.PropertyName": "OnChange",
-              "Components.EventCallback": "True"
-            },
-            "BoundAttributeParameters": []
-          }
-        ],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Korea.Shared.Components.Pagination"
-        }
-      },
-      {
-        "Kind": "Components.Component",
-        "Name": "Korea.Shared.Components.Pagination",
-        "AssemblyName": "Korea",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Korea.Shared.Components.Pagination",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Model",
-            "TypeName": "Korea.Shared.Models.PaginationModel",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": null,
-            "Diagnostics": [],
-            "Metadata": {
-              "Common.PropertyName": "Model"
-            },
-            "BoundAttributeParameters": []
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "OnChange",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.Int32>",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": null,
-            "Diagnostics": [],
-            "Metadata": {
-              "Common.PropertyName": "OnChange",
-              "Components.EventCallback": "True"
-            },
-            "BoundAttributeParameters": []
-          }
-        ],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Korea.Shared.Components.Pagination",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "Kind": "Components.Component",
-        "Name": "Korea.Shared.Components.__generated__Pagination",
-        "AssemblyName": "Korea",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "__generated__Pagination",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Model",
-            "TypeName": "Korea.Shared.Models.PaginationModel",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": null,
-            "Diagnostics": [],
-            "Metadata": {
-              "Common.PropertyName": "Model"
-            },
-            "BoundAttributeParameters": []
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "OnChange",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.Int32>",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": null,
-            "Diagnostics": [],
-            "Metadata": {
-              "Common.PropertyName": "OnChange",
-              "Components.EventCallback": "True"
-            },
-            "BoundAttributeParameters": []
-          }
-        ],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Korea.Shared.Components.__generated__Pagination"
-        }
-      },
-      {
-        "Kind": "Components.Component",
-        "Name": "Korea.Shared.Components.__generated__Pagination",
-        "AssemblyName": "Korea",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Korea.Shared.Components.__generated__Pagination",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Model",
-            "TypeName": "Korea.Shared.Models.PaginationModel",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": null,
-            "Diagnostics": [],
-            "Metadata": {
-              "Common.PropertyName": "Model"
-            },
-            "BoundAttributeParameters": []
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "OnChange",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.Int32>",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": null,
-            "Diagnostics": [],
-            "Metadata": {
-              "Common.PropertyName": "OnChange",
-              "Components.EventCallback": "True"
-            },
-            "BoundAttributeParameters": []
-          }
-        ],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Korea.Shared.Components.__generated__Pagination",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -766,6 +766,113 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Korea.Pages.Home",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "Korea.Pages.__generated__ActiveGood",
+        "AssemblyName": "Korea",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "__generated__ActiveGood",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Id"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "CategoryId",
+            "TypeName": "System.Int32",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "CategoryId"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Korea.Pages.__generated__ActiveGood"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "Korea.Pages.__generated__ActiveGood",
+        "AssemblyName": "Korea",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Korea.Pages.__generated__ActiveGood",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Id"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "CategoryId",
+            "TypeName": "System.Int32",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "CategoryId"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Korea.Pages.__generated__ActiveGood",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

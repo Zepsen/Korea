@@ -36,4 +36,11 @@
 		color: var(--light);
 	}
 
+	.darktheme.main .page-item .page-link {
+		background-color: transparent;
+		border-color: darkgrey;
+	}
+	.darktheme.main .page-item.active .page-link {
+		background-color: var(--info);
+	}
 	/*#endregion Bootstrap  */

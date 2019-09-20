@@ -124,6 +124,10 @@ app {
 	cursor: not-allowed;
 }
 
+.page-item.active .page-link {
+	background-color: var(--info);
+}
+
 @media (max-width: 767.98px) {
     .main .top-row {
         display: none;
