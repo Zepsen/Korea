@@ -115,8 +115,13 @@ app {
     color: red;
 }
 
-.pointer {
+.pointer,
+.pagination {
 	cursor: pointer;
+}
+
+.page-item.disabled {
+	cursor: not-allowed;
 }
 
 @media (max-width: 767.98px) {
