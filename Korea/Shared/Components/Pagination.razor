@@ -1,0 +1,33 @@
+@using Korea.Shared.Models;
+
+<nav aria-label="Page navigation example">
+	<ul class="pagination">
+		<li class="page-item @(Model.EnabledPrev ? null : "disabled")"><a class="page-link" @onclick="Prev">Previous</a></li>			
+		<li class="page-item @(Model.EnabledNext ? null : "disabled")"><a class="page-link" @onclick="Next">Next</a></li>
+	</ul>	
+</nav>
+
+@code 
+{
+	[Parameter]
+	public PaginationModel Model { get; set; }
+
+	[Parameter]
+    public EventCallback<int> OnChange { get; set; }
+
+	private async Task Prev()
+	{
+		if(Model.EnabledPrev) 
+		{			
+			await OnChange.InvokeAsync(Model.Page - 1);
+		}
+	}
+
+	private async Task Next()
+	{			
+		if(Model.EnabledNext)		
+		{
+			await OnChange.InvokeAsync(Model.Page + 1);
+		}
+	}	
+}

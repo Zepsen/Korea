@@ -981,7 +981,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "sha512": "+nlUaWVBXibHgpdS7sa5gW2mQ+xG6g9J/pyv++2K8kfVJfD/mVb0LOTqzSp+vXH0cy64vKfr4f8DUd5T4wZzqg==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -1435,23 +1435,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dmytro_Zepsen\\.nuget\\packages\\": {},
+    "C:\\Users\\ZEPSENHOME\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\Korea\\korea\\korea\\Korea.csproj",
+      "projectUniqueName": "C:\\Projects\\Korea\\korea\\Korea.csproj",
       "projectName": "Korea",
-      "projectPath": "C:\\Projects\\Korea\\korea\\korea\\Korea.csproj",
-      "packagesPath": "C:\\Users\\Dmytro_Zepsen\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\Korea\\korea\\korea\\obj\\",
+      "projectPath": "C:\\Projects\\Korea\\korea\\Korea.csproj",
+      "packagesPath": "C:\\Users\\ZEPSENHOME\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\Korea\\korea\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Dmytro_Zepsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ZEPSENHOME\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
