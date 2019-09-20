@@ -1,0 +1,20 @@
+
+.darktheme {
+	background: var(--dark);
+}
+
+.darktheme.main a {
+	color: lightskyblue;
+}
+
+/*#region  Bootstrap */
+.darktheme.main .breadcrumb {
+	background-color: var(--secondary);
+	
+}
+
+.darktheme.main .breadcrumb .active {
+	color: var(--light);
+}
+
+/*#endregion Bootstrap  */

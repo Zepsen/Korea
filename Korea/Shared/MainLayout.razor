@@ -9,7 +9,7 @@
 </div> -->
 
 <CascadingValue Value="this">
-	<div class="main" style="margin-top: 50px">
+	<main class="main @Theme" style="margin-top: 50px">
 
 		@if(HasHeader)
 		{
@@ -18,11 +18,12 @@
 					<!-- <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
 					Korea
 				</a>
+				<span class="oi oi-contrast mr-1 pointer" @onclick="ToggleTheme"></span>
 			</nav>
 		}
 
 		<nav aria-label="breadcrumb">
-			<ol class="breadcrumb">
+			<ol class="breadcrumb rounded-0">
 				@foreach (var bread in breads)
 				{
 					<li class="breadcrumb-item @(bread.Active ? "active" : null)">
@@ -40,7 +41,7 @@
 		<div class="content px-4">
 			@Body
 		</div>
-	</div>
+	</main>
 </CascadingValue>
 
 @code 
@@ -54,5 +55,12 @@
 	}
 
 	public bool HasHeader { get; set;} = true;
+
+	private string Theme => DarkTheme ? "darktheme" : null;
+	private bool DarkTheme { get; set; } = true;
 	
+	private void ToggleTheme()
+	{
+		DarkTheme = !DarkTheme;
+	} 
 }

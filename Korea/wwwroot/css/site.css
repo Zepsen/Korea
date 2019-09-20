@@ -1,14 +1,18 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+@import "./dark.css";
 
+/* :root {
+	
+} */
 
 html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;	
 }
 
 app {
     position: relative;
     display: flex;
-    flex-direction: column;
+	flex-direction: column;	
 }
 
 .top-row {
@@ -18,7 +22,10 @@ app {
 }
 
 .main {
-    flex: 1;
+	flex: 1;
+	min-height: 100vh;
+	height: 100%;
+	
 }
 
     .main .top-row {
@@ -95,6 +102,10 @@ app {
 
 .validation-message {
     color: red;
+}
+
+.pointer {
+	cursor: pointer;
 }
 
 @media (max-width: 767.98px) {
