@@ -258,3 +258,7 @@ C:\Projects\Korea\korea\obj\Debug\netstandard2.0\RazorDeclaration\Pages\ActiveGo
 C:\Projects\Korea\korea\obj\Debug\netstandard2.0\Razor\Pages\ActiveGood.razor.g.cs
 C:\Projects\Korea\korea\obj\Debug\netstandard2.0\RazorDeclaration\Shared\Components\Pagination.razor.g.cs
 C:\Projects\Korea\korea\obj\Debug\netstandard2.0\Razor\Shared\Components\Pagination.razor.g.cs
+C:\Projects\Korea\korea\korea\obj\Debug\netstandard2.0\RazorDeclaration\Shared\Components\Pagination.razor.g.cs
+C:\Projects\Korea\korea\korea\obj\Debug\netstandard2.0\Razor\Shared\Components\Pagination.razor.g.cs
+C:\Projects\Korea\korea\obj\Debug\netstandard2.0\RazorDeclaration\Shared\Components\GoodCard.razor.g.cs
+C:\Projects\Korea\korea\obj\Debug\netstandard2.0\Razor\Shared\Components\GoodCard.razor.g.cs

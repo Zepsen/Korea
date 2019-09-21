@@ -10,20 +10,8 @@
 <div class="row">
 	@foreach (var good in goods.Data)
 	{
-		<div class="col-sm-12 col-md-6 col-lg-3 p-1">
-			<div class="card shadow-sm">
-				<img src="@good.Image" class="card-img-top" alt="@good.Title">
-				<div class="card-body">
-					<h5 class="card-title">@good.Title</h5>
-					<p class="card-text">@good.Description</p>
-					<h2><span class="badge badge-secondary">@good.Price</span></h2>
-					<a href="@GetUrl(good.Id)" class="btn btn-outline-info">Go to @good.Id</a>
-				</div>
-			</div>
-		</div>
-	}
-
-	
+		<GoodCard Model="good"/>
+	}	
 </div>
 
 <div class="row">
@@ -68,8 +56,6 @@
 			Total = res.Count
 		};		
 	}
-
-	private string GetUrl(int id) => $"good/{Id}/{id}";
 
 	private async Task OnChangePage(int page)
 	{

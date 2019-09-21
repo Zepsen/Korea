@@ -43,6 +43,11 @@ using Korea.Shared;
 
 #line default
 #line hidden
+#line 8 "C:\Projects\Korea\korea\_Imports.razor"
+using Korea.Shared.Components;
+
+#line default
+#line hidden
 #line 2 "C:\Projects\Korea\korea\Pages\ActiveGood.razor"
 using Korea.Shared.Models;
 

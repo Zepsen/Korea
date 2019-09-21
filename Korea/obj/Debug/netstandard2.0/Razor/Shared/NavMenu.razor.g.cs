@@ -44,6 +44,16 @@ using Korea.Shared;
 
 #line default
 #line hidden
+#line 8 "C:\Projects\Korea\korea\_Imports.razor"
+using Korea.Shared.Components;
+
+#line default
+#line hidden
+#line 9 "C:\Projects\Korea\korea\_Imports.razor"
+using Korea.Shared.Models;
+
+#line default
+#line hidden
     public class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
