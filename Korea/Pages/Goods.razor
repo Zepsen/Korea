@@ -1,11 +1,14 @@
 @page "/category/{Id:int}" 
-@using Korea.Shared.Models;
-@using Korea.Core;
-@using Korea.Shared.Components;
+
+
 @using System.Linq;
 
 @inherits Page
 @inject HttpClient Http
+
+<div class="row">
+	<SearchFrom OnChanged="FilterGoods"/>
+</div>
 
 <div class="row">
 	@foreach (var good in goods.Data)
@@ -62,5 +65,10 @@
 		filter.Page = page;
 		pagination.Page = page;
 		goods = await GetGoods(filter);
+	}
+
+	private async Task FilterGoods(string str)
+	{
+		var a = 1;
 	}
 }
